@@ -1,0 +1,13 @@
+ENTITY Q2Lista3VHDL IS
+
+	PORT (a, b, c : IN BIT;
+			x       : OUT BIT);
+			
+END Q2Lista3VHDL;
+
+ARCHITECTURE comportamento OF Q2Lista3VHDL IS
+BEGIN
+
+	x <= (NOT a AND NOT b AND c) OR (NOT a AND b AND c) OR (a AND NOT b AND NOT c);
+	
+END comportamento;
